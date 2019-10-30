@@ -3,9 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Game Title</title>
+	<meta name="viewport" content="width=device-width">
+	<style>
+	html, body{
+		width: 100%;
+		height: 100%;
+	}
+	canvas{
+		margin: 0 !important;
+	}
+
+	#game-container{
+		max-width: 420px;
+		height: 100%;
+	}
+	</style>
 </head>
 <body>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.0.5/phaser.min.js"></script>
+	
+	<div id="game-container"></div>
+
 	<script src="js/game.js"></script>
 </body>
 </html>

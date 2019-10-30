@@ -144,6 +144,10 @@ Jumper.Play.prototype = {
   }
 }
 
-var game = new Phaser.Game( 300, 500, Phaser.CANVAS, '' );
+var height = document.getElementById("game-container").offsetHeight;
+var width = document.getElementById("game-container").offsetWidth;
+
+
+var game = new Phaser.Game( width, height,Phaser.CANVAS, 'game-container' );
 game.state.add( 'Play', Jumper.Play );
 game.state.start( 'Play' );
